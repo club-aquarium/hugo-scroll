@@ -448,7 +448,7 @@ ul li {
 .inner {
   position: relative;
   width: 80%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -527,7 +527,7 @@ ul li {
 .post {
   position: relative;
   width: 80%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0rem auto;
   padding-bottom: 4rem;
   padding-top: 4rem;
@@ -756,7 +756,7 @@ a.fn-item.active {
 .pagination {
   position: relative;
   width: 80%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 4rem auto;
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
