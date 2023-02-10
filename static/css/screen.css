@@ -389,7 +389,7 @@ table td {
 }
 
 table th {
-  color: #000;
+  color: var(--text-color);
 }
 
 table caption + thead tr:first-child th,
