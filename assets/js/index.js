@@ -12,12 +12,15 @@ var $sitehead = $("#site-head");
 /* Globals jQuery, document */
 (function ($) {
   "use strict";
-  function srcTo(el) {
+  function srcTo(el, dur = 1000) {
     $("html, body").animate(
       {
         scrollTop: el.offset().top,
       },
-      1000
+      dur,
+      function() {
+        window.location.hash = el.attr("id");
+      }
     );
   }
   function srcToAnchorWithTitle(str) {
@@ -80,7 +83,8 @@ var $sitehead = $("#site-head");
       });
     }
 
-    $("ul li").before('<span class="bult fa fa-asterisk"></span>');
+    $('ul').addClass("fa-ul");
+    $("ul li").prepend('<span class="fa-li"><i class="fa fa-asterisk"></i></span>');
     $("blockquote p").prepend('<span class="quo fa fa-quote-left"></span>');
     $("blockquote p").append('<span class="quo fa fa-quote-right"></span>');
   });
