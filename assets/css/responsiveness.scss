@@ -10,6 +10,9 @@
     position: fixed;
     top: 0px;
     left: 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
     z-index: 99999;
     background: var(--color-background);
     width: 100%;
