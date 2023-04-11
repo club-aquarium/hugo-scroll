@@ -30,18 +30,23 @@ var $sitehead = $("#site-head");
     }
   }
   $(document).ready(function () {
-    $postholder.each(function (e) {
-      if (e % 2 != 0) $(this).addClass("odd");
-    });
+    // fallback to jQuery animate if smooth scrolling is not supported
+    if (!"scrollBehavior" in document.documentElement.style) {
+      // Cover buttons
+      $("a.btn.site-menu").click(function (e) {
+        e.preventDefault();
+        srcToAnchorWithTitle($(e.target).data("title-anchor"));
+      });
 
-    $("a.btn.site-menu").click(function (e) {
-      srcToAnchorWithTitle($(e.target).data("title-anchor"));
-    });
-    $("#header-arrow").click(function () {
-      srcTo($first);
-    });
+      // cover arrow button
+      $("#header-arrow").click(function (e) {
+        e.preventDefault()
+        srcTo($first);
+      });
+    }
 
     $(".post.last").next(".post-after").hide();
+
     if ($sitehead.length) {
       $(window).scroll(function () {
         var w = $(window).scrollTop();
@@ -51,7 +56,7 @@ var $sitehead = $("#site-head");
         if (w >= Math.floor(g) && w <= Math.ceil(h)) {
           $(".fixed-nav").fadeOut("fast");
         } else if ($(window).width() > 399) {
-          $(".fixed-nav").fadeIn("fast");
+          $(".fixed-nav").css("display", "flex").fadeIn("fast");
         }
 
         $post.each(function () {

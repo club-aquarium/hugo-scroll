@@ -4,13 +4,15 @@ Clean, responsive, single-page [Hugo](https://gohugo.io/) website theme.
 
 [![hugo-scroll](https://img.shields.io/badge/Hugo--Themes-HugoScroll-blue)](https://themes.gohugo.io/themes/hugo-scroll/)
 ![Test](https://github.com/zjedi/hugo-scroll/workflows/CI/badge.svg?branch=master&event=push)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a56faf45-76fa-4bdf-b9d4-35cfc7d620cf/deploy-status)](https://app.netlify.com/sites/hugo-scroll/deploys)
 [![GitHub](https://img.shields.io/github/license/zjedi/hugo-scroll)](https://github.com/zjedi/hugo-scroll/blob/master/LICENSE)
+![code-size](https://img.shields.io/github/languages/code-size/zjedi/hugo-scroll)
 
 Promo image which may be a bit outdated:<br/>
 ![Screenshot Hugo Scroll Theme](https://raw.githubusercontent.com/zjedi/hugo-scroll/master/images/tn.png)
 
 ## ⭐ Feature highlights
-- Responseive to screen size/shape
+- Responsive to screen size/shape
 - SEO friendly
 - Customizable
 - Video cover
